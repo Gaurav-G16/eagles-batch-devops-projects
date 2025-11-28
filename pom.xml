@@ -33,15 +33,17 @@
       <url>file:///tmp/maven-project-site</url>
     </site>
 
-    <snapshotRepository>
-      <id>nexus</id>
-      <url>http://172.31.10.0:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-
-    <repository>
-      <id>nexus</id>
-      <url>http://172.31.10.0:8081/repository/maven-releases/</url>
-    </repository>
+   <repository>
+	      <id>nexus</id>
+	      <name>DigiEras Technologies Releases Nexus Repository</name>
+	      <url>http://localhost:8081/repository/maven-oct/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>DigiEras Technologies Snapshot Nexus Repository </name>
+	      <url>http://localhost:8081/repository/maven-oct-snapshot/</url>
+			</snapshotRepository>
   </distributionManagement>
 
   <build>
